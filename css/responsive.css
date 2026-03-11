@@ -1,0 +1,128 @@
+/* ══════════════════════════════════
+   responsive.css — Media Queries
+   ══════════════════════════════════ */
+
+/* ── Tablet ── */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  /* Nav */
+  nav {
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    padding: 0.75rem 0 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 0.65rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Hero */
+  #hero {
+    padding: 7rem 1.5rem 3rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-stats {
+    gap: 1.5rem;
+  }
+
+  .stat-num {
+    font-size: 1.6rem;
+  }
+
+  /* Sections */
+  section {
+    padding: 4rem 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Section dividers */
+  .section-divider {
+    margin: 0 1.5rem;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Education */
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Certs */
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ── Small mobile ── */
+@media (max-width: 420px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
