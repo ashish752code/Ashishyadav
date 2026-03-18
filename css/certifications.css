@@ -46,3 +46,25 @@
   font-size: 0.8rem;
   color: var(--text-muted);
 }
+/* ── Certificate Section ── */
+.filter-btn {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 18px;
+  border-radius: 100px;
+  border: 1px solid rgba(201,168,76,0.3);
+  background: transparent;
+  color: #8A837C;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background: #C9A84C;
+  color: #fff;
+  border-color: #C9A84C;
+}
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(26,23,20,0.12);
+}
